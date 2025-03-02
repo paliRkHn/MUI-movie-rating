@@ -24,6 +24,9 @@ function App(){
         primary: '#ffffff',
         secondary: '#000000',
       }
+    },
+    typography: {
+      fontFamily: 'Trebuchet MS, sans-serif'
     }
   })
 
@@ -41,6 +44,9 @@ function App(){
         primary: '#000000',
         secondary: '#ffffff',
       }
+    },
+    typography: {
+      fontFamily: 'Trebuchet MS, sans-serif'
     }
   })
 
@@ -60,11 +66,9 @@ function App(){
             <ButtonAppBar />
           </Grid>
           <Grid size={9}>
-            <Paper elevation={3} sx={{ backgroundColor: 'secondary.main', borderRadius: 3}}>
-              <Typography variant='h2' sx={{ display: 'flex', justifyContent:'center', py: 2}}>
-                MUI - Adv Diploma Class
-              </Typography>
-            </Paper>
+            <Typography variant='h3' sx={{ pl: '3rem', pt: 1, color: 'text.primary' }}>
+              Movies about...
+            </Typography>
           </Grid>
           <Grid container size={3}  sx={{ justifyContent: 'right', alignSelf: 'flex-start'}}>
             <FormControlLabel label="Dark Mode"  sx={{ color: 'text.primary'}} control={
@@ -72,6 +76,14 @@ function App(){
             } 
             />
           </Grid>
+          <Grid size={8}>
+            <Paper elevation={3} sx={{ backgroundColor: 'secondary.main', borderRadius: 3, mb: '1rem'}}>
+              <Typography variant='h2' sx={{ display: 'flex', justifyContent:'center', py: 2}}>
+                Badass people and guns
+              </Typography>
+            </Paper>
+          </Grid>
+          
           <Grid container justifyContent={'center'} sx={{ px: 2}}>
             {moviesList.map((movie, i) => (
               <Grid item key={i} size={{ md:3, sm:4, xs:8  }}>
@@ -79,21 +91,14 @@ function App(){
               </Grid>
             ))} 
           </Grid>
-          <Grid size={{ md:4, xs:8 }}>
-            <Paper elevation={10} sx={{ mx: 2, px: 8, py: 4, backgroundColor: '#604ac3'}}>
+          <Grid size={{ md:5, xs:8 }}>
+            <Paper elevation={10} sx={{ mx: 2, my: 1, px: 8, py: 4, backgroundColor: 'primary.main'}}>
               <Typography variant='h6' sx={{textAlign: 'center', color: 'white'}}>
-                Rate some of my favorite movies about guns and badass people. 
-                <br /><br />
+                Give your rate to some of my favorite movies. 
+                <Typography variant='body1' sx={{ pt: "1rem", pb: '2rem'}}>(These are all 5 stars for me anyways 🤩)</Typography>
                 xoxo
                 <br />
                 Paloma
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid size={{ md:4, xs:8 }}>
-            <Paper elevation={10} sx={{ mx: 2, px: 6, py: 3, backgroundColor: '#848c8c', borderStyle: 'dashed', borderRadius: 15}}>
-              <Typography variant='body1' sx={{textAlign: 'center'}}>
-                These are all 5 stars for me anyways 🤩
               </Typography>
             </Paper>
           </Grid>
