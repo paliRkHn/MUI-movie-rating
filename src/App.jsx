@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid2';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -60,16 +59,16 @@ function App(){
           <Grid size={12}>
             <ButtonAppBar />
           </Grid>
-          <Grid size={8}>
+          <Grid size={9}>
             <Paper elevation={3} sx={{ backgroundColor: 'secondary.main', borderRadius: 3}}>
               <Typography variant='h2' sx={{ display: 'flex', justifyContent:'center', py: 2}}>
                 MUI - Adv Diploma Class
               </Typography>
             </Paper>
           </Grid>
-          <Grid size={2}>
-            <FormControlLabel label="Dark mode"  control={
-              <Switch checked={isDark === "dark"} onChange={selectTheme}/>
+          <Grid container size={3}  sx={{ justifyContent: 'right', alignSelf: 'flex-start'}}>
+            <FormControlLabel label="Dark Mode"  sx={{ color: 'text.primary'}} control={
+              <Switch color='secondary' checked={isDark === "dark"} onChange={selectTheme}/>
             } 
             />
           </Grid>
