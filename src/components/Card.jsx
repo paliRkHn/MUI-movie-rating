@@ -6,8 +6,8 @@ function MovieCard ({image, title, name, release, director, starred}){
     const [value, setValue] = React.useState(0);
 
     return(
-        <Card variant="outlined" sx={{ backgroundColor: '#726a93' }}>
-            <CardContent sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Card variant="outlined" sx={{ backgroundColor: 'primary.light' }}>
+            <CardContent sx={{ display: 'flex', justifyContent: 'center', color: 'text' }}>
               <Typography variant='h5'>
                 <b>{name}</b>
               </Typography>
@@ -29,7 +29,7 @@ function MovieCard ({image, title, name, release, director, starred}){
                 image={image}
                 title={title}
             />
-            <CardContent>
+            <CardContent sx={{ color: 'text'}}>
               <Typography variant='body1'>
                 <b>Released:</b> {release}
               </Typography>
