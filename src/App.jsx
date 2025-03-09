@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import { createTheme, Typography, FormControlLabel, Switch } from '@mui/material';
 import ButtonAppBar from './components/Navbar';
 import MovieCard from './components/Card';
-import moviesList from './components/ListMovies';
+import actionMovies from './components/movies-list/ActionMovies';
 import { ThemeProvider } from '@emotion/react';
 
 function App(){
@@ -85,7 +85,7 @@ function App(){
           </Grid>
           
           <Grid container justifyContent={'center'} sx={{ px: 2}}>
-            {moviesList.map((movie, i) => (
+            {actionMovies.map((movie, i) => (
               <Grid item key={i} size={{ md:3, sm:4, xs:8  }}>
                 <MovieCard {...movie} />
               </Grid>
