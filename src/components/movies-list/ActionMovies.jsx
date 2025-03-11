@@ -1,4 +1,4 @@
-const moviesList = [
+const actionMovies = [
     { image:"https://image.tmdb.org/t/p/original/oiIJ3OAjQ3scifNO8s2x72WgXLR.jpg",
       title: "Leon the professional movie poster",
       name: "Leon the Professional",
@@ -57,4 +57,4 @@ const moviesList = [
     }  
   ]
   
-  export default moviesList;
+  export default actionMovies;
