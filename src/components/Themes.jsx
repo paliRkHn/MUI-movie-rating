@@ -18,7 +18,7 @@ const darkTheme = createTheme({
         }
     },
     typography: {
-      fontFamily: 'Trebuchet MS, sans-serif'
+      fontFamily: 'Victor Mono, sans-serif'
     }
 });
 
@@ -39,7 +39,7 @@ const lightTheme = createTheme({
         }
     },
     typography: {
-        fontFamily: 'Trebuchet MS, sans-serif'
+        fontFamily: 'Victor Mono, sans-serif'
     }
 });
 
