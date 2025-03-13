@@ -1,23 +1,21 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
-import Navbar from './components/Navbar';
+import { BrowserRouter } from 'react-router-dom';
 import { ThemeContextProvider } from './components/Themes';
-import ActionPage from './components/ActionPage';
-import AnimePage from './components/AnimePage';
-import SciFiPage from './components/SciFiPage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import AppRoutes from './Routes';
 
 function App(){
-
   
   return (
-
-    //add Routes
-
-    <ThemeContextProvider>
-      <Navbar />
-      <ActionPage />
-      <AnimePage />
-      <SciFiPage />
-    </ThemeContextProvider>
+    <BrowserRouter>
+      <ThemeContextProvider>
+        <Navbar />
+        <AppRoutes />
+        <Footer />
+      </ThemeContextProvider>
+    </BrowserRouter>
   )
 }
 
