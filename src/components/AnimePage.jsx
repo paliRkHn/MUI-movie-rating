@@ -2,7 +2,8 @@
 import React from 'react';
 import Grid from '@mui/material/Grid2';
 import Box from '@mui/material/Box';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import MovieCard from './Card';
 import animationMovies from './movies-list/AnimationMovies';
 
@@ -30,6 +31,7 @@ function AnimePage() {
         </Grid>
       ))} 
     </Grid>
+    <Button variant="contained" color="secondary" sx={{ mt: 4, mb: 2, mx: 'auto', display: 'block', fontSize: '1.3rem' }}>Submit</Button>
   </Grid>
 </Box>
 )};
